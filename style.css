@@ -1,63 +1,198 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     text-align: center;
     padding: 0;
     margin: 0;
 }
 
-.dp {
-    height: 180px;
-    width: 180px;
-    border-radius: 50%;
-  }
+
+
+
+
+/*
+    1. Header Section - 29
+    2. Frontpage - 81
+    3. About Section - 147
+    4. Education Section - 213
+    5. Skills Section - 260
+    6. Projects Section - 328
+    7.Contact Section - 417
+ */
+
+
+
+
+
+/* 1. Header Section */
+
+.nav{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(145, 162, 162);
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20 0 20;
+    position: fixed;
+    top: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.nav p{
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+    font-weight: bolder;
+    color: #e4f9f5;
+}
+
+.name{
+    margin: 50px;
+}
+
+.options{
+    padding-right: 20px;
+    font-size: 1.2rem;
+}
+
+.options li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px 0 35px;
+}
+
+.options li a{
+    text-decoration: none;
+    color: white;
+}
+
+.options li a:hover{
+    color: #186f6f;
+}
+
+
+
+/* 2. Frontpage */
 
 .container {
     background-color: #e4f9f5;
+    border-radius: 5px;
     height: 100vh;
-    padding-top: 50px;
+    padding-top: 0;
+    margin: 15px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform:uppercase;
 }
 
-.mountain{
-    padding-bottom: 0%;
+.front{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'poppins';
 }
 
-.intro{
-    padding: 50px;
-}
-
-h1{
-    font-family: 'Baloo Bhai 2', cursive;
-    font-family: 'Libre Baskerville', serif;
-    font-family: 'Sedgwick Ave Display', cursive;
-    font-size: 80px;
-    color: #49a8a8;
-}
-
-h2 {
-    color: #66bfbf;
+.front h1{
     font-family: "Montserrat", sans-serif;
-    font-size: 2.5rem;
+    font-size: 60px;
+    color: #49a8a8;
+    margin: 0;
+    line-height: 80px;
+}
+
+h2.subheading {
+    color: #3a6767;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
     font-weight: normal;
     padding-bottom: 10px;
 }
 
-p{
-    display: block;
+.resume{
+    display: inline-block;
+    height: 50px;
 }
 
-img{
-    padding: 0%;
+#res-btn{
+    border: none;
+    color: white;
+    border-radius: 15px;
+    height: 100%;
+    margin: 20px;
+    padding: 10px;
+    /* background: #617e80; */
+    background: #767784;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight:600;
 }
 
-.text{
+#res-btn:hover{
+    cursor: pointer;
+    background-color: #788ed7;
+}
+
+
+
+/* 3. About Section */
+
+#about{
+    padding-top: 20px;
+}
+
+.about{
+    padding: 20px 50px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-sec{
+    width: 40%;
+}
+
+.dp {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    padding-bottom: 15px;
+  }
+
+.icons a{
+    font-size: 40px;
+    color: #186f6f;
+}
+
+.icons i{
+    margin: 8px;
+}
+
+.icons i:hover{
+    color: #245bae;
+}
+
+.about-text{
     display: flex;
     gap:0;
     flex-direction: column;
     align-items: center;
     padding: 0;
+    width: 50%;
+    text-align: left;
+    margin-left: 20px;
+    line-height: 24px;
 }
 
-.lead{
-    width: 50%;
+.about-text-heading{
     padding: 0;
     font-size: 20px;
     color: #186f6f;
@@ -66,153 +201,311 @@ img{
     font-family: 'Libre Baskerville', serif;
 }
 
-.skills{
-    padding-top: 50px;
-}
-
-/* .pro{
-    border: 3px solid rgb(155, 143, 143);
-} */
-
-.eachskill{
-    display: inline-flex;
-    gap: 20px;
-}
-
-.lead2{
-    width: 450px;
+.about-text-content{
     padding: 0;
-    font-size: 18px;
-    color: #186f6f;
-    font-family: 'Baloo Bhai 2', cursive;
-    font-family: 'Bree Serif', serif;
-    font-family: 'Libre Baskerville', serif;
-    text-align: left;
-    align-self: center;
+    font-size: 15px;
+    color: #289595;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.exp{
+
+
+/* 4. Education Section */
+
+#education{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.ed-details{
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #289595;
+    border: 2px solid #d8d8d8;
+    border-radius: 10px;
+}
+
+.year{
+    padding: 0;
+    margin: 0;
+    font-size: small;
+}
+
+.ed-details h4{
+    color: #186f6f;
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    background-color: #d8d8d8;
+    padding: 10px;
+}
+
+.bottom{
+    padding: 8px 10px;
+}
+
+.ed-details-para{
+    text-align: justify;
+    font-size: small;
+    line-height: 18px;
+}
+
+
+
+/* 5. Skills Section */
+
+#skills{
+    background-color: #e4f9f5;
+}
+
+#skills h2{
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+.skills h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #186f6f;
+}
+
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+.eachskill{
+    width: 100%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(155, 143, 143);
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
 }
 
-div > h3{
-    align-self: flex-start;
-    color: #11999e;
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
+.eachskill:hover {
+    transform: scale(1.1);
+}
+
+.eachskill h3{
+    text-align: center;
+}
+
+.skill-gif{
+    height: 200px;
+}
+
+.skill-gif img{
+    height: 100%;
+    width: auto;
+}
+
+.skill-text{
+    text-align: center;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #289595;
+}
+
+
+
+
+/* 6. Project Section */
+
+#projects{
+    margin: 50px 0 50px 0;
+
+}
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 0;
 }
 
-.info{
-    padding-bottom: 100px;
+.project{
+    height: 300px;
+    width: 20%;
+    border: 2px solid #49a8a8;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.contact{
-    padding: 50px;
+.hidden-link{
+    display: none;
+    transition: transform 0.3s ease-in-out;
 }
 
-.cont{
+.project:hover{
+    border-color: #5f6868;
+}
+
+.project:hover .hidden-link{
+    display: block;
+    visibility:visible;
+    transform: scale(1.5);
+}
+
+.project:hover .project-txt{
+    background-color: #5f6868;
+}
+
+.project:hover .project-txt p{
+    display: none;
+}
+
+.project:hover .project-txt h4{
+    display: none;
+}
+
+.project:hover .project-img img{
+    transform: scale(1.2);
+}
+
+.project-img{
+    height: 60%;
+}
+
+.project-img img{
+    margin-top: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-txt{
+    background-color: #49a8a8;
+    margin: 0;
+    height: 40%;
     display: flex;
     flex-direction: column;
-    padding: 60px;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 50px;
+    justify-content: space-around;
 }
 
-.lead3{
-    width: 50%;
-    align-self: center;
+.project-txt p{
     margin: 0;
     padding: 0;
-    font-size: 18px;
+    padding-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-txt h4{
+    margin: 0 0 5px 0;
+    padding: 5px 0 0 0;
+    display: block;
+}
+
+
+
+/* 7. Contact Section */
+
+#contact{
+    background-color: #b0b7b6;  
+    border-top-color: #186f6f;
     color: #186f6f;
-    font-family: 'Baloo Bhai 2', cursive;
-    font-family: 'Bree Serif', serif;
-    font-family: 'Libre Baskerville', serif;
-    padding-bottom: 10px;
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 0;
 }
 
-.btn {
-    background: #617e80;
-    border-radius: 8px;
-    font-family: "Montserrat", sans-serif;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-}
-
-.cont5{
+div.contact-container{
     display: flex;
-    gap: 50px;
-    justify-content:center;
-    align-items:center ;
+    justify-content: space-around;
 }
 
-.exinfo{
-    background-color: #66bfbf;
-    height: 70px;
-    padding: 50px;
+.left, .right{
+    width: 40%;
+    display: flex;
+    justify-content:center;
+}
+
+.right{
+    flex-direction: column;
+    text-align: left;
+}
+
+.right h3, h4{
+    color: #125151;
+}
+
+.bottom-icons a{
+    font-size: 30px;
+    color: #186f6f;
+}
+
+.bottom-icons i{
+    margin: 8px;
+}
+
+.bottom-icons i:hover{
+    color: #245bae;
+}
+
+.form{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.form input, textarea{
+    padding-left: 20px;
+    
+}
+
+.form input,button{
+    height: 40px;
+}
+
+.form *{
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    outline: none;
+}
+
+#subject{
+    grid-column: 1/ span 2;
+}
+
+#message{
+    grid-column: 1/ span 2;
+    resize: none;   
+    padding: 15px;
+}
+
+#submit{
+    grid-column: 1/ span 2;
+    background-color: #fff;
+    color: #186f6f;
+}
+
+#submit:hover{
+    background-color: #736969;
+    color: white;
 }
 
 .copyright {
     color: #eaf6f6;
     font-size: 1rem;
     padding: 20px 0;
-}
-
-.cont5 > a{
-    font-size: 20px;
-    color: #1c8686;
-}
-
-@media(max-width:680px){
-
-    /* body{
-        padding: 5px;
-    } */    
-
-    .lead{
-        width: auto;
-        margin: auto;
-    }
-
-    .lead2{
-        width: auto;
-        text-align: center;
-        margin: auto;
-    }
-
-    .lead3{
-        width: auto;
-        margin: auto;
-    }
-
-    .eachskill{
-        display: block;
-        width: 100%;
-    }
-
-    div > h3{
-        align-self: center;
-    }
-
-    .exp{
-        padding: 50px;
-    }
-
-    
-    .mount{
-        width: 100%;
-        object-fit: cover;
-    }
-    
-
-}
-
-.button:hover{
-    background-color: #a2a2a2;
+    margin: 20px 0 0 0;
 }
