@@ -15,11 +15,11 @@ body{
 /*
     1. Header Section - 29
     2. Frontpage - 126
-    3. About Section - 192
-    4. Education Section - 259
-    5. Skills Section - 306
-    6. Projects Section - 374
-    7.Contact Section - 463
+    3. About Section - 202
+    4. Education Section - 270
+    5. Skills Section - 317
+    6. Projects Section - 385
+    7.Contact Section - 474
  */
 
 
@@ -147,6 +147,17 @@ body{
     font-family: 'poppins';
 }
 
+.fade-in-text {
+    font-family: Arial;
+    font-size: 150px;
+    animation: fadeIn 2s;
+}
+  
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 .front h1{
     font-family: "Montserrat", sans-serif;
     font-size: 60px;
@@ -175,7 +186,6 @@ h2.subheading {
     height: 100%;
     margin: 20px;
     padding: 10px;
-    /* background: #617e80; */
     background: #767784;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
