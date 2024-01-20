@@ -19,6 +19,8 @@
     .image-sec{
         height: auto;
         width: auto;
+        padding: 0;
+        margin: 0;
     }
 
     /* Skills Section */
@@ -27,6 +29,10 @@
     }
     .skill-text{
         width: 90%;
+    }
+    .eachskill:hover{
+        transition: none;
+        transform: none;
     }
 
     /* Project Section */
@@ -68,10 +74,39 @@
         text-align: justify;
         margin: 0;
     }
+    .dp{
+        height: min-content;
+    }
 
     /* Project Section */
     #p5,#p6{
         display: none;
+    }
+}
+
+
+@media(max-width:470px){
+
+    /* About Section */
+    .dp{
+        height: 200px;
+        width: 200px;
+    }
+    .icons a{
+        font-size: 25px;
+    }
+
+    /* Education Section */
+    .ed-details{
+        margin: 10px;
+    }
+
+    /* Contact Section */
+    #contact,#skills{
+        width: 100%;
+    }
+    #contact{
+        padding: 10px 0;
     }
 }
 
