@@ -1,0 +1,86 @@
+/* All responsive code or media queries are here */
+
+
+
+@media(max-width: 992px) {
+
+    /* Header Section */
+    .options{
+        display: none;
+    }
+    .dropdown{
+        display: inline-block;
+    }
+    .name{
+        font-size: xx-large;
+    }
+
+    /* About Section */
+    .image-sec{
+        height: auto;
+        width: auto;
+    }
+
+    /* Skills Section */
+    .skills{
+        grid-template-columns: 1fr;
+    }
+    .skill-text{
+        width: 90%;
+    }
+
+    /* Project Section */
+    #p7,#p8{
+        display: none;
+    }
+
+    /* Contact Section */
+    .contact-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+    }
+}
+
+
+
+@media(max-width: 768px) {
+
+    /* Front Page */
+    .container{
+        height: 110vh;
+    }
+
+    /* About Section */
+    .about{
+        flex-direction: column;
+    }
+    .about-text{
+        width: 100%;
+        text-align: justify;
+        margin: 0;
+    }
+
+    /* Project Section */
+    #p5,#p6{
+        display: none;
+    }
+}
+
+
+
+@media(max-width: 1240px){
+    
+    /* Contact Section */
+    div.contact-container{
+        justify-content: space-between;
+    }
+}

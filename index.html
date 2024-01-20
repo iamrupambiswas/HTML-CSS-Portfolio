@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css" >
+    <link rel="stylesheet" href="./responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Libre+Baskerville&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
@@ -34,6 +35,19 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+        
+        <div class="dropdown">
+            <div class="ellipsis-icon" onclick="toggleDropdown()">
+                &#8942;
+            </div>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </div>
 
 
@@ -58,14 +72,7 @@
     <!-- About Section -->
     <section id="about">
             <h2 class="subheading">About Me</h2>
-            <div class="about">    
-                <div class="about-text">
-                    <p class="about-text-heading">I am a web developer and programmer. My objective is to work with an organization where can learn new skills and increase my abilities for the organizational goals as
-                    well as myself.</p>
-                    <p class="about-text-content">
-                        As a BCA final year student, I am passionate about leveraging technology to solve real-world challenges. My skill set encompasses a diverse range of technologies and programming languages, making me adept in both front-end and back-end development. Proficient in HTML, CSS, and JavaScript, I bring a creative approach to web design. My experience with React.js allows me to build interactive and dynamic user interfaces, ensuring an engaging user experience. <br><br>In addition to my web development skills, I am well-versed in Python and C, enabling me to develop efficient and scalable solutions. My proficiency extends to using various frameworks and libraries to streamline development processes. I also have a solid understanding of web development principles, ensuring that the applications I build are not only functional but also adhere to best practices.
-                    </p>
-                </div>
+            <div class="about">
                 <div class="image-sec">
                     <img class="dp d-block mx-auto mb-4" src="./DP.jpg" alt="Picture of Rupam Biswas"> 
                     <div class="icons">
@@ -82,6 +89,13 @@
                             <i class="fa-brands fa-square-x-twitter"></i>
                         </a>
                     </div> 
+                </div>   
+                <div class="about-text">
+                    <p class="about-text-heading">I am a web developer and programmer. My objective is to work with an organization where can learn new skills and increase my abilities for the organizational goals as
+                    well as myself.</p>
+                    <p class="about-text-content">
+                        As a BCA final year student, I am passionate about leveraging technology to solve real-world challenges. My skill set encompasses a diverse range of technologies and programming languages, making me adept in both front-end and back-end development. Proficient in HTML, CSS, and JavaScript, I bring a creative approach to web design. My experience with React.js allows me to build interactive and dynamic user interfaces, ensuring an engaging user experience. <br><br>In addition to my web development skills, I am well-versed in Python and C, enabling me to develop efficient and scalable solutions. My proficiency extends to using various frameworks and libraries to streamline development processes. I also have a solid understanding of web development principles, ensuring that the applications I build are not only functional but also adhere to best practices.
+                    </p>
                 </div>
             </div>
     </section>
@@ -171,7 +185,7 @@
     <section id="projects">
         <h2 class="subheading">Projects</h2>
         <div class="project-container">
-            <div class="project" onclick="redirecttoCalculator()">
+            <div id="p1" class="project completed" onclick="redirecttoCalculator()">
                 <div class="project-img">
                     <img src="./Calculator.png" alt="Calculator" height="150px">
                 </div>
@@ -181,7 +195,7 @@
                     <h2 class="hidden-link">Click</h2>
                 </div>    
             </div>
-            <div class="project" onclick="redirecttoFlipkart()">
+            <div id="p2" class="project completed" onclick="redirecttoFlipkart()">
                 <div class="project-img">
                     <img src="./Flipkart.png" alt="Flipkart Logo" height="150px">
                 </div>
@@ -191,7 +205,7 @@
                     <h2 class="hidden-link">Click</h2>
                 </div>  
             </div>
-            <div class="project" onclick="">
+            <div id="p3" class="project incomplete" onclick="">
                 <div class="project-img">
                     <img src="" alt="" height="150px">
                 </div>
@@ -201,7 +215,7 @@
                     <h2 class="hidden-link">Click</h2>
                 </div>    
             </div>
-            <div class="project" onclick="">
+            <div id="p4" class="project incomplete" onclick="">
                 <div class="project-img">
                     <img src="" alt="" height="150px">
                 </div>
@@ -211,7 +225,7 @@
                     <h2 class="hidden-link">Click</h2>
                 </div>    
             </div>
-            <div class="project" onclick="">
+            <div id="p5" class="project incomplete" onclick="">
                 <div class="project-img">
                     <img src="" alt="" height="150px">
                 </div>
@@ -221,7 +235,7 @@
                     <h2 class="hidden-link">Click</h2>
                 </div>    
             </div>
-            <div class="project" onclick="">
+            <div id="p6" class="project incomplete" onclick="">
                 <div class="project-img">
                     <img src="" alt="" height="150px">
                 </div>
@@ -231,7 +245,7 @@
                     <h2 class="hidden-link">Click</h2>
                 </div>    
             </div>
-            <div class="project" onclick="">
+            <div id="p7" class="project incomplete" onclick="">
                 <div class="project-img">
                     <img src="" alt="" height="150px">
                 </div>
@@ -241,7 +255,7 @@
                     <h2 class="hidden-link">Click</h2>
                 </div>    
             </div>
-            <div class="project" onclick="">
+            <div id="p8" class="project incomplete" onclick="">
                 <div class="project-img">
                     <img src="" alt="" height="150px">
                 </div>
@@ -298,7 +312,7 @@
         <p class="copyright">© Rupam Biswas 2023 - <span id="year"></span></p>
     </section>
     
-    <script src="./app.js"></script>
+    <script src="./script.js"></script>
     
 </body>
 </html>
