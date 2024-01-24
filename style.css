@@ -14,12 +14,12 @@ body{
 
 /*
     1. Header Section - 29
-    2. Frontpage - 126
-    3. About Section - 202
-    4. Education Section - 270
-    5. Skills Section - 317
-    6. Projects Section - 385
-    7.Contact Section - 474
+    2. Frontpage - 130
+    3. About Section - 206
+    4. Education Section - 274
+    5. Skills Section - 321
+    6. Projects Section - 389
+    7.Contact Section - 478
  */
 
 
@@ -119,6 +119,10 @@ body{
   
 .show {
     display: block;
+}
+
+#res-link{
+    display: none;
 }
 
 

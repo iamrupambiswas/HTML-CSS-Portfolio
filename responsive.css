@@ -62,7 +62,15 @@
 
     /* Front Page */
     .container{
-        height: 110vh;
+        height: 90vh;
+    }
+
+    #res-link{
+        display: block;
+    }
+
+    #res{
+        display: none;
     }
 
     /* About Section */
