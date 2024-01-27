@@ -32,6 +32,15 @@ function redirecttoFlipkart() {
     window.location.href = "https://iamrupambiswas.github.io/Flipkart-Clone-Project/";
 }
 
+// To redirect to the currency converter project project page
+function redirecttoCurrencyConverter() {
+  window.location.href = "https://iamrupambiswas.github.io/CurrencyConverter/";
+}
+
+// To redirect to the Bhagvadgita Search Engine project project page
+function redirecttoBhagvadgita() {
+  window.location.href = "https://iamrupambiswas.github.io/BhagvadGeetaSearchEngine/";
+}
 
 
 //To send mail
