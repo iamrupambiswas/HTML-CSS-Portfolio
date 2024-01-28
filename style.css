@@ -16,10 +16,10 @@ body{
     1. Header Section - 29
     2. Frontpage - 130
     3. About Section - 206
-    4. Education Section - 274
-    5. Skills Section - 321
-    6. Projects Section - 389
-    7.Contact Section - 478
+    4. Education Section - 282
+    5. Skills Section - 329
+    6. Projects Section - 397
+    7.Contact Section - 486
  */
 
 
@@ -237,8 +237,16 @@ h2.subheading {
     margin: 8px;
 }
 
-.icons i:hover{
-    color: #245bae;
+.linkedin:hover{
+    color: #0077b5;
+}
+
+.twitter:hover{
+    color: black;
+}
+
+.github:hover{
+    color: #2b3137;
 }
 
 .about-text{
@@ -516,10 +524,6 @@ div.contact-container{
 
 .bottom-icons i{
     margin: 8px;
-}
-
-.bottom-icons i:hover{
-    color: #245bae;
 }
 
 .form{
