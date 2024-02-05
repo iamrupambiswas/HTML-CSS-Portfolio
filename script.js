@@ -2,23 +2,67 @@
 
 
 
+//To refresh the page and reach the top on clicking on "Rupam"
+document.addEventListener("DOMContentLoaded", function() {
+  const scrollToTopButton = document.getElementById("scrollToTop");
+
+  scrollToTopButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+    setTimeout(function() {
+      window.location.reload();
+    }, 1000);
+  });
+});
+
+
+
 //To make the three dots section and its options available and function
 function toggleDropdown() {
-    var dropdownContent = document.getElementById("dropdownContent");
-    dropdownContent.classList.toggle("show");
-  }
-  
-  window.onclick = function(event) {
-    if (!event.target.matches('.ellipsis-icon')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      for (var i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
+  var dropdownContent = document.getElementById("dropdownContent");
+  dropdownContent.classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.ellipsis-icon')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
     }
+  }
+};
+
+
+
+//To put animation to the about section
+document.addEventListener("DOMContentLoaded", function() {
+  const paragraphs = document.querySelectorAll(".hidden-paragraph");
+
+  const options = {
+    threshold: 0.5,
   };
+
+  const observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible");
+      }
+    });
+  }, options);
+
+  paragraphs.forEach(paragraph => {
+    observer.observe(paragraph);
+  });
+});
 
 
 
