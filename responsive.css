@@ -96,10 +96,6 @@
 @media(max-width:470px){
 
     /* About Section */
-    .dp{
-        height: 200px;
-        width: 200px;
-    }
     .icons a{
         font-size: 25px;
     }
@@ -126,5 +122,13 @@
     /* Contact Section */
     div.contact-container{
         justify-content: space-between;
+    }
+}
+
+
+
+@media (min-width: 990px) {
+    .circle:hover .inner-circle {
+        transform: rotateY(180deg);
     }
 }

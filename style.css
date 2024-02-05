@@ -20,10 +20,10 @@ a{
     1. Header Section - 33
     2. Frontpage - 134
     3. About Section - 214
-    4. Education Section - 301
-    5. Skills Section - 348
-    6. Projects Section - 416
-    7.Contact Section - 505
+    4. Education Section - 357
+    5. Skills Section - 404
+    6. Projects Section - 472
+    7.Contact Section - 561
  */
 
 
@@ -227,14 +227,70 @@ h2.subheading {
 
 .image-sec{
     width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .dp {
-    height: 350px;
-    width: 350px;
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.circle{
+    background-color: transparent;
+    width: 22rem;
+    height: 22rem;
+    margin-bottom: 1.5rem;
+}
+
+.inner-circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 50%;
-    padding-bottom: 15px;
-  }
+}
+
+.inner-circle-front{
+    width: 350px;
+    height: 350px;
+    background-color: #3498db;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.inner-circle-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inner-circle-front, .inner-circle-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.icons{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 .icons a{
     font-size: 40px;
