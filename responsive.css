@@ -94,8 +94,15 @@
     .icons a{
         font-size: 2rem;
     }
+    .circle{
+        height: 15rem;
+        width: 15rem;
+    }
 
     /* Education Section */
+    #education{
+        padding: 1rem;
+    }
     .ed-details{
         margin: 0;
         width: auto;
