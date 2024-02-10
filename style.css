@@ -45,31 +45,31 @@ a{
     padding: 0 20 0 20;
     position: fixed;
     top: 0;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0.5rem 0.5rem 0.75rem rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
 
 .nav p{
     margin: 0;
     padding: 0;
-    font-size: x-large;
+    font-size: 1.5rem;
     font-weight: bolder;
     color: #e4f9f5;
 }
 
 .name{
-    margin: 50px;
+    margin: 3rem;
 }
 
 .options{
-    padding-right: 20px;
+    padding-right: 2rem;
     font-size: 1.2rem;
 }
 
 .options li{
     list-style: none;
     display: inline-block;
-    margin: 0 25px 0 35px;
+    margin: 0 1.75rem 0 1.75rem;
 }
 
 .options li a{
@@ -89,9 +89,9 @@ a{
   
 .ellipsis-icon {
     cursor: pointer;
-    font-size: 25px;
-    padding: 10px 15px;
-    border-radius: 10px;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
     color: #e4f9f5;
 }
 
@@ -104,13 +104,13 @@ a{
     position: relative;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     z-index: 1;
-    margin-top: 150px;
+    margin-top: 10rem;
 }
   
 .dropdown-content a {
-    padding: 12px 16px;
+    padding: 0.75rem;
     display: block;
     text-decoration: none;
     color: #333;
@@ -135,11 +135,11 @@ a{
 
 .container {
     background-color: #e4f9f5;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     height: 100vh;
     padding-top: 0;
-    margin: 15px;
-    margin-top: 100px;
+    margin: 1rem;
+    margin-top: 6.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -148,7 +148,7 @@ a{
 }
 
 .front{
-    margin-top: 60px;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,7 +157,7 @@ a{
 
 .fade-in-text {
     font-family: Arial;
-    font-size: 150px;
+    font-size: 10rem;
     animation: fadeIn 3s;
 }
   
@@ -168,10 +168,10 @@ a{
 
 .front h1{
     font-family: "Montserrat", sans-serif;
-    font-size: 60px;
+    font-size: 4rem;
     color: #49a8a8;
     margin: 0;
-    line-height: 80px;
+    line-height: 5rem;
 }
 
 .sm{
@@ -183,24 +183,24 @@ h2.subheading {
     font-family: "Montserrat", sans-serif;
     font-size: 2rem;
     font-weight: normal;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
 }
 
 .resume{
     display: inline-block;
-    height: 50px;
+    height: 3rem;
 }
 
 #res-btn{
     border: none;
     color: white;
     border-radius: 15px;
-    height: 100%;
-    margin: 20px;
-    padding: 10px;
+    height: 3rem;
+    margin: 1rem;
+    padding: 0.6rem;
     background: #767784;
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
+    font-size: 0.9rem;
     font-weight:600;
 }
 
@@ -214,12 +214,12 @@ h2.subheading {
 /* 3. About Section */
 
 #about{
-    padding-top: 20px;
+    padding-top: 2rem;
     width: 100%;
 }
 
 .about{
-    padding: 20px 50px 20px 50px;
+    padding: 2rem 2.5rem;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -253,13 +253,13 @@ h2.subheading {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0.5rem 1.2rem 0 rgba(0,0,0,0.2);
     border-radius: 50%;
 }
 
 .inner-circle-front{
-    width: 350px;
-    height: 350px;
+    width: 50rem;
+    height: 50rem;
     background-color: #3498db;
     border-radius: 50%;
     overflow: hidden;
@@ -293,12 +293,12 @@ h2.subheading {
 }
 
 .icons a{
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #186f6f;
 }
 
 .icons i{
-    margin: 8px;
+    margin: 1rem;
 }
 
 .linkedin:hover{
@@ -320,14 +320,14 @@ h2.subheading {
     align-items: center;
     padding: 0;
     width: 50%;
-    text-align: left;
-    margin-left: 20px;
-    line-height: 24px;
+    text-align: justify;
+    margin-left: 2rem;
+    line-height: 1.5rem;
 }
 
 .about-text-heading{
     padding: 0;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #186f6f;
     font-family: 'Baloo Bhai 2', cursive;
     font-family: 'Bree Serif', serif;
@@ -336,14 +336,14 @@ h2.subheading {
 
 .about-text-content{
     padding: 0;
-    font-size: 15px;
+    font-size: 0.9rem;
     color: #289595;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .hidden-paragraph {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(3rem);
     transition: opacity 1s, transform 1s;
 }
   
@@ -361,15 +361,15 @@ h2.subheading {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 3rem;
 }
 
 .ed-details{
-    width: 400px;
+    width: 25rem;
     font-family: Arial, Helvetica, sans-serif;
     color: #289595;
     border: 2px solid #d8d8d8;
-    border-radius: 10px;
+    border-radius: 0.75rem;
 }
 
 .year{
@@ -386,17 +386,17 @@ h2.subheading {
 
 .top{
     background-color: #d8d8d8;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .bottom{
-    padding: 8px 10px;
+    padding: 0.75rem;
 }
 
 .ed-details-para{
     text-align: justify;
     font-size: small;
-    line-height: 18px;
+    line-height: 1.2rem;
 }
 
 
@@ -421,11 +421,11 @@ h2.subheading {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    margin-bottom: 50px;
+    margin: 1rem;
+    margin-bottom: 3rem;
 }
 
 .eachskill{
@@ -437,7 +437,7 @@ h2.subheading {
     align-items: center;
     text-align: center;
     border: 2px solid rgb(155, 143, 143);
-    border-radius: 10px;
+    border-radius: 0.7rem;
     background-color: #fff;
     transition: transform 0.3s ease-in-out;
 }
@@ -451,7 +451,7 @@ h2.subheading {
 }
 
 .skill-gif{
-    height: 200px;
+    height: 12rem;
 }
 
 .skill-gif img{
@@ -461,7 +461,7 @@ h2.subheading {
 
 .skill-text{
     text-align: center;
-    width: 500px;
+    width: 31rem;
     font-family: Arial, Helvetica, sans-serif;
     color: #289595;
 }
@@ -472,7 +472,7 @@ h2.subheading {
 /* 6. Project Section */
 
 #projects{
-    margin: 50px 0 50px 0;
+    margin: 3rem 0;
 
 }
 .project-container{
@@ -483,10 +483,10 @@ h2.subheading {
 }
 
 .project{
-    height: 300px;
-    width: 200px;
+    height: 19rem;
+    width: 13rem;
     border: 2px solid #49a8a8;
-    margin: 10px;
+    margin: 0.6rem;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     position: relative;
@@ -527,10 +527,11 @@ h2.subheading {
 
 .project-img{
     height: 60%;
+    overflow: hidden;
 }
 
 .project-img img{
-    margin-top: 15px;
+    margin-top: 1rem;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -546,13 +547,13 @@ h2.subheading {
 .project-txt p{
     margin: 0;
     padding: 0;
-    padding-bottom: 15px;
+    padding-bottom: 1rem;
     transition: transform 0.3s ease-in-out;
 }
 
 .project-txt h4{
-    margin: 0 0 5px 0;
-    padding: 5px 0 0 0;
+    margin: 0 0 0.5rem 0;
+    padding: 0.5rem 0 0 0;
     display: block;
 }
 
@@ -565,7 +566,7 @@ h2.subheading {
     border-top-color: #186f6f;
     color: #186f6f;
     margin: 0;
-    padding: 20px;
+    padding: 1rem;
     padding-bottom: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -593,12 +594,12 @@ div.contact-container{
 }
 
 .bottom-icons a{
-    font-size: 30px;
+    font-size: 1.5rem;
     color: #186f6f;
 }
 
 .bottom-icons i{
-    margin: 8px;
+    margin-right: 0.75rem;
 }
 
 .form{
@@ -606,16 +607,16 @@ div.contact-container{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    gap: 0.75rem;
 }
 
 .form input, textarea{
-    padding-left: 20px;
+    padding-left: 1rem;
     
 }
 
 .form input,button{
-    height: 40px;
+    height: 2.3rem;
 }
 
 .form *{
@@ -649,6 +650,6 @@ div.contact-container{
 .copyright {
     color: #eaf6f6;
     font-size: 1rem;
-    padding: 20px 0;
-    margin: 20px 0 0 0;
+    padding: 1rem 0;
+    margin: 1rem 0 0 0;
 }

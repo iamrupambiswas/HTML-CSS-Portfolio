@@ -11,9 +11,6 @@
     .dropdown{
         display: inline-block;
     }
-    .name{
-        font-size: xx-large;
-    }
 
     /* About Section */
     .image-sec{
@@ -76,14 +73,12 @@
     /* About Section */
     .about{
         flex-direction: column;
+        align-items: center;
     }
     .about-text{
         width: 100%;
         text-align: justify;
         margin: 0;
-    }
-    .dp{
-        height: min-content;
     }
 
     /* Project Section */
@@ -97,7 +92,7 @@
 
     /* About Section */
     .icons a{
-        font-size: 25px;
+        font-size: 2rem;
     }
 
     /* Education Section */
@@ -111,7 +106,7 @@
         width: 100%;
     }
     #contact{
-        padding: 10px 0;
+        padding: 1rem 0;
     }
 }
 
