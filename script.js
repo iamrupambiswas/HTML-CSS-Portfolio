@@ -86,6 +86,11 @@ function redirecttoBhagvadgita() {
   window.location.href = "https://iamrupambiswas.github.io/BhagvadGeetaSearchEngine/";
 }
 
+// To redirect to the QR Code Generator project's github page
+function redirecttoQR() {
+  window.location.href = "https://github.com/iamrupambiswas/QR-Code-Generator";
+}
+
 
 //To send mail
 function sendEmail() {
