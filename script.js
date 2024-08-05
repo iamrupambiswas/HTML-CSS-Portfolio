@@ -91,6 +91,11 @@ function redirecttoQR() {
   window.location.href = "https://github.com/iamrupambiswas/QR-Code-Generator";
 }
 
+// To redirect to the QR Code Generator project's github page
+function redirecttoApnaBot() {
+  window.location.href = "https://github.com/iamrupambiswas/Chatbot";
+}
+
 
 //To send mail
 function sendEmail() {
